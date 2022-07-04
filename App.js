@@ -12,8 +12,8 @@ export default function App() {
   const [birdBottom, setBirdBottom] = useState(screenHeight / 2);
   const obsticlesWidth = 60;
   const obsticlesHeight = 300;
-  const gap = 50;
-  const gravity = 200;
+  const gap = 200;
+  const gravity = 3;
   let gameTimerId;
   let obsticlesLeftTimerId;
 
@@ -28,9 +28,7 @@ export default function App() {
       }
     }
   }, [birdBottom]);
-  console.log(screenWidth)
 
-console.log(obsticlesLeft)
 
   useEffect(()=>{
     if(obsticlesLeft > -obsticlesWidth){

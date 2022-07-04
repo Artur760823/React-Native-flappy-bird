@@ -1,15 +1,15 @@
 import React from "react";
-import { View } from "react-native";
+import { View, Image } from "react-native";
 
 const Obstacles = ({ obsticlesLeft, obsticlesWidth, obsticlesHeight, gap }) => {
 
 
   return (
-    <View>
-      <View
+  <View>
+      <Image
+        source={require('../assets/pipe.png')}
         style={{
           position: "absolute",
-          backgroundColor: "green",
           width: obsticlesWidth,
           height: obsticlesHeight,
           left: obsticlesLeft,
